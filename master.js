@@ -1,9 +1,10 @@
-var WIDTH, HEIGHT;
+let WIDTH, HEIGHT;
 
-var canvas = document.getElementById('canvas'),
-    ctx = canvas.getContext('2d');
+const canvas = document.getElementById("canvas"),
+    ctx = canvas.getContext("2d");
 
-var requestAnimationFrame = window.requestAnimationFrame ||
+const requestAnimationFrame =
+    window.requestAnimationFrame ||
     window.mozRequestAnimationFrame ||
     window.webkitRequestAnimationFrame ||
     window.msRequestAnimationFrame;
@@ -12,12 +13,12 @@ function init() {
     WIDTH = window.innerWidth;
     HEIGHT = window.innerHeight;
 
-    canvas.setAttribute('width', WIDTH);
-    canvas.setAttribute('height', HEIGHT);
+    canvas.setAttribute("width", WIDTH);
+    canvas.setAttribute("height", HEIGHT);
 
     ctx.clearRect(0, 0, WIDTH, HEIGHT);
     ctx.beginPath();
-    ctx.fillStyle = 'black';
+    ctx.fillStyle = "black";
     ctx.fillRect(0, 0, WIDTH, HEIGHT);
     ctx.closePath();
 
@@ -25,8 +26,6 @@ function init() {
 }
 
 function ani() {
-
-
     //requestAnimationFrame(ani);
 }
 
